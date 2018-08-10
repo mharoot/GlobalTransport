@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Aug 09, 2018 at 05:40 PM
--- Server version: 5.7.21
--- PHP Version: 5.6.35
+-- Host: 127.0.0.1
+-- Generation Time: Aug 10, 2018 at 06:17 AM
+-- Server version: 10.1.26-MariaDB
+-- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,17 +28,15 @@ SET time_zone = "+00:00";
 -- Table structure for table `dot_tracker_emailtemp`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_emailtemp`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_emailtemp` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_emailtemp` (
+  `id` int(255) NOT NULL,
   `emaildata` text NOT NULL,
   `created_by` text NOT NULL,
   `creationdate_time` text NOT NULL,
   `type` text NOT NULL,
   `from_email` text NOT NULL,
-  `from_name` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  `from_name` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dot_tracker_emailtemp`
@@ -56,14 +54,12 @@ INSERT INTO `dot_tracker_emailtemp` (`id`, `emaildata`, `created_by`, `creationd
 -- Table structure for table `dot_tracker_login`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_login`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_login` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_login` (
+  `id` int(255) NOT NULL,
   `user_id` varchar(255) NOT NULL,
   `ip` text NOT NULL,
-  `creationdatetime` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+  `creationdatetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dot_tracker_login`
@@ -125,15 +121,13 @@ INSERT INTO `dot_tracker_login` (`id`, `user_id`, `ip`, `creationdatetime`) VALU
 -- Table structure for table `dot_tracker_notes`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_notes`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_notes` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_notes` (
+  `id` int(255) NOT NULL,
   `quote_id` int(255) NOT NULL,
   `date` text NOT NULL,
   `note` text NOT NULL,
-  `created_by` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
+  `created_by` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dot_tracker_notes`
@@ -173,17 +167,15 @@ INSERT INTO `dot_tracker_notes` (`id`, `quote_id`, `date`, `note`, `created_by`)
 -- Table structure for table `dot_tracker_order_history`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_order_history`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_order_history` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_order_history` (
+  `id` int(11) NOT NULL,
   `order_id` text NOT NULL,
   `field` text NOT NULL,
   `old_value` text NOT NULL,
   `new_value` text NOT NULL,
   `created_time` text NOT NULL,
-  `created_by` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1252 DEFAULT CHARSET=latin1;
+  `created_by` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `dot_tracker_order_history`
@@ -782,7 +774,9 @@ INSERT INTO `dot_tracker_order_history` (`id`, `order_id`, `field`, `old_value`,
 (1248, '61', 'dispatch_phone', 'none', '818-956-6686', '08/02/2018 09:41:57 am', 'tonygreg'),
 (1249, '61', 'dispatch_fax', 'none', '747-477-1186', '08/02/2018 09:41:57 am', 'tonygreg'),
 (1250, '61', 'dispatched_time', 'none', '08/02/2018 09:41:57 am', '08/02/2018 09:41:57 am', 'tonygreg'),
-(1251, '61', 'status', 'Order', 'Dispatched', '08/02/2018 09:41:57 am', 'tonygreg');
+(1251, '61', 'status', 'Order', 'Dispatched', '08/02/2018 09:41:57 am', 'tonygreg'),
+(1252, '61', 'email', 'none', 'YanWang@gmail.com', '08/09/2018 13:43:10 pm', 'tonygreg'),
+(1253, '61', 'Vehicle_lot1', '111', '111', '08/09/2018 13:43:10 pm', 'tonygreg');
 
 -- --------------------------------------------------------
 
@@ -790,9 +784,8 @@ INSERT INTO `dot_tracker_order_history` (`id`, `order_id`, `field`, `old_value`,
 -- Table structure for table `dot_tracker_payment1`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_payment1`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_payment1` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_payment1` (
+  `id` int(11) NOT NULL,
   `order_id` int(255) NOT NULL,
   `date_received` text NOT NULL,
   `payment_from_to` text NOT NULL,
@@ -805,9 +798,8 @@ CREATE TABLE IF NOT EXISTS `dot_tracker_payment1` (
   `other` text,
   `expiration_date` text,
   `authorization_code` text,
-  `check_number` text,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `check_number` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `dot_tracker_payment1`
@@ -824,15 +816,13 @@ INSERT INTO `dot_tracker_payment1` (`id`, `order_id`, `date_received`, `payment_
 -- Table structure for table `dot_tracker_payment2`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_payment2`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_payment2` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_payment2` (
+  `id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   `deposit` text,
   `bal_due` text,
-  `other` text,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `other` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `dot_tracker_payment2`
@@ -847,17 +837,15 @@ INSERT INTO `dot_tracker_payment2` (`id`, `order_id`, `deposit`, `bal_due`, `oth
 -- Table structure for table `dot_tracker_quote_history`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_quote_history`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_quote_history` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_quote_history` (
+  `id` int(11) NOT NULL,
   `quote_id` text NOT NULL,
   `field` text NOT NULL,
   `old_value` text NOT NULL,
   `new_value` text NOT NULL,
   `created_time` text NOT NULL,
-  `created_by` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=418 DEFAULT CHARSET=latin1;
+  `created_by` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `dot_tracker_quote_history`
@@ -1231,9 +1219,8 @@ INSERT INTO `dot_tracker_quote_history` (`id`, `quote_id`, `field`, `old_value`,
 -- Table structure for table `dot_tracker_shipper`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_shipper`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_shipper` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_shipper` (
+  `id` int(255) NOT NULL,
   `company_name` text NOT NULL,
   `fname` text,
   `lname` text,
@@ -1255,9 +1242,8 @@ CREATE TABLE IF NOT EXISTS `dot_tracker_shipper` (
   `extra1` text NOT NULL,
   `extra2` text NOT NULL,
   `creation_datetime` text NOT NULL,
-  `created_by` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+  `created_by` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dot_tracker_shipper`
@@ -1275,14 +1261,12 @@ INSERT INTO `dot_tracker_shipper` (`id`, `company_name`, `fname`, `lname`, `stat
 -- Table structure for table `dot_tracker_sms`
 --
 
-DROP TABLE IF EXISTS `dot_tracker_sms`;
-CREATE TABLE IF NOT EXISTS `dot_tracker_sms` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dot_tracker_sms` (
+  `id` int(255) NOT NULL,
   `phone` text NOT NULL,
   `message` text NOT NULL,
   `creationdatetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `status` int(10) NOT NULL,
-  PRIMARY KEY (`id`)
+  `status` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -1291,9 +1275,8 @@ CREATE TABLE IF NOT EXISTS `dot_tracker_sms` (
 -- Table structure for table `global_tracker_accountinfo`
 --
 
-DROP TABLE IF EXISTS `global_tracker_accountinfo`;
-CREATE TABLE IF NOT EXISTS `global_tracker_accountinfo` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `global_tracker_accountinfo` (
+  `id` int(11) NOT NULL,
   `owner` text NOT NULL,
   `address` text NOT NULL,
   `address1` text NOT NULL,
@@ -1320,26 +1303,24 @@ CREATE TABLE IF NOT EXISTS `global_tracker_accountinfo` (
   `dispatch_fax` text NOT NULL,
   `support_phone` text NOT NULL,
   `support_fax` text NOT NULL,
-  `support_email` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `support_email` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `global_tracker_accountinfo`
 --
 
 INSERT INTO `global_tracker_accountinfo` (`id`, `owner`, `address`, `address1`, `city`, `state`, `zip`, `country`, `timezone`, `phone_local`, `phone_tollfree`, `phone_cell`, `fax`, `email`, `website`, `mc_number`, `company_logo`, `company_description`, `sales_phone`, `sales_fax`, `sales_email`, `dispatch_contact`, `dispatch_email`, `dispatch_phone`, `dispatch_fax`, `support_phone`, `support_fax`, `support_email`) VALUES
-(1, 'Elena', '2009 West Burbank Blvd.', '', 'Burbank', 'CA', '91506', '1', '54', '818-956-5666', '877-241-2676', '', '747-477-1186', 'info@ampmautotransport.com', 'www.AmPmAutotransport.com', '722001', '', '<p>AMPM Auto Transport is committed to providing consistent and dependable door-to-door auto transportation solutions in the United States.</p>', '818-956-56661232131312', '747-477-1186', '', 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '818-956-5666', '747-477-1186', 'info@AmPmAutoTransport.com');
+(1, 'Elena', '2009 West Burbank Blvd.', '', 'Burbank', 'CA', '91506', '1', '54', '818-956-5666', '877-241-2676', '', '747-477-1186', 'info@ampmautotransport.com', 'www.AmPmAutotransport.com', '722001', 'reneefoundation.png', '<p>AMPM Auto Transport is committed to providing consistent and dependable door-to-door auto transportation solutions in the United States.&nbsp;</p>', '818-956-56661232131312', '747-477-1186', '', 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '818-956-5666', '747-477-1186', 'info@AmPmAutoTransport.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `global_tracker_order`
+-- Table structure for table `global_tracker_dispatch`
 --
 
-DROP TABLE IF EXISTS `global_tracker_order`;
-CREATE TABLE IF NOT EXISTS `global_tracker_order` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `global_tracker_dispatch` (
+  `id` int(255) NOT NULL,
   `shipper_name` text,
   `fname` text NOT NULL,
   `lname` text NOT NULL,
@@ -1411,20 +1392,109 @@ CREATE TABLE IF NOT EXISTS `global_tracker_order` (
   `d_phone3` text,
   `d_mobile` text,
   `quote_id` int(255) NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
+  `status` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `global_tracker_dispatch`
+--
+
+INSERT INTO `global_tracker_dispatch` (`id`, `shipper_name`, `fname`, `lname`, `company`, `email`, `phone1`, `phone2`, `mobile`, `fax`, `address1`, `address2`, `city`, `state`, `zip`, `sel_contact`, `sel_location`, `p_address1`, `p_address2`, `p_city`, `p_state`, `p_zip`, `p_contactname`, `p_companyname`, `p_buyernumber`, `p_phone1`, `p_phone2`, `p_mobile`, `s_date`, `s_vrun`, `s_via`, `info_forShipper`, `notes_shipper`, `vehicle_info`, `carrier_pay`, `bal_paid_by`, `cod_method`, `pickup_terminal_fee`, `delivery_terminal_fee`, `referred_by`, `p_phone3`, `extra`, `extra1`, `carrier_name`, `extra2`, `extra3`, `extra4`, `extra5`, `extra6`, `save_as_default`, `dispatch_contact`, `dispatch_email`, `dispatch_phone`, `dispatch_fax`, `driver_fname`, `driver_lname`, `driver_phone`, `driver_instruction`, `created_by`, `creationdatetime`, `dispatched_time`, `d_address`, `d_city`, `d_state`, `d_zip`, `d_contact_name`, `d_company_name`, `d_phone1`, `d_phone2`, `d_phone3`, `d_mobile`, `quote_id`, `status`) VALUES
+(57, NULL, 'Yann', 'Wang', 'ASDF', 'yxw165730@gmail.com', '4699105086', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/31/2018', '1', '1', '', '', '{\"Vehicle_tariff1\":\"100\",\"Vehicle_deposit1\":\"50\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"ford\",\"Vehicle_model1\":\"Baleno\",\"Vehicle_color1\":\"\",\"Vehicle_plate1\":\"\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '2', '', '2018-07-11', '2018-07-20', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '100.00', '50.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'kunalnimje', '2018-07-18 14:45:35', '07/31/2018 15:42:17 pm', '', 'Burbank', 'CA', '90321', '', '', '4699105086', '', '', '', 41, 5),
+(61, NULL, 'Yan', 'Wang', 'ASDF', '', '', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/28/2018', '0', '2', '', '', '{\"Vehicle_tariff1\":\"500\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"jkbsfdk\",\"Vehicle_model1\":\"fusion\",\"Vehicle_color1\":\"red\",\"Vehicle_plate1\":\"222\",\"Vehicle_vin1\":\"2131245656\",\"Vehicle_lot1\":\"111\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"AK\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '10', '', '2018-08-25', '2018-08-29', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '500.00', '150.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'tonygreg', '2018-07-26 11:09:10', '08/02/2018 09:41:57 am', '2009 Burbank Blvd', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 0, 6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `global_tracker_order`
+--
+
+CREATE TABLE `global_tracker_order` (
+  `id` int(255) NOT NULL,
+  `shipper_name` text,
+  `fname` text NOT NULL,
+  `lname` text NOT NULL,
+  `company` text,
+  `email` text,
+  `phone1` text,
+  `phone2` text,
+  `mobile` text,
+  `fax` text,
+  `address1` text,
+  `address2` text,
+  `city` text,
+  `state` text,
+  `zip` text,
+  `sel_contact` text,
+  `sel_location` text,
+  `p_address1` text,
+  `p_address2` text,
+  `p_city` text NOT NULL,
+  `p_state` text NOT NULL,
+  `p_zip` text NOT NULL,
+  `p_contactname` text,
+  `p_companyname` text,
+  `p_buyernumber` text,
+  `p_phone1` text,
+  `p_phone2` text,
+  `p_mobile` text,
+  `s_date` text NOT NULL,
+  `s_vrun` text NOT NULL,
+  `s_via` text NOT NULL,
+  `info_forShipper` text,
+  `notes_shipper` text,
+  `vehicle_info` text NOT NULL,
+  `carrier_pay` decimal(10,2) DEFAULT NULL,
+  `bal_paid_by` text NOT NULL,
+  `cod_method` text NOT NULL,
+  `pickup_terminal_fee` decimal(10,2) DEFAULT NULL,
+  `delivery_terminal_fee` decimal(10,2) DEFAULT NULL,
+  `referred_by` text,
+  `p_phone3` text,
+  `extra` text NOT NULL,
+  `extra1` text NOT NULL,
+  `carrier_name` text NOT NULL,
+  `extra2` text,
+  `extra3` text,
+  `extra4` text,
+  `extra5` decimal(10,2) DEFAULT NULL,
+  `extra6` decimal(10,2) DEFAULT NULL,
+  `save_as_default` tinyint(1) NOT NULL DEFAULT '0',
+  `dispatch_contact` text NOT NULL,
+  `dispatch_email` text NOT NULL,
+  `dispatch_phone` text NOT NULL,
+  `dispatch_fax` text NOT NULL,
+  `driver_fname` text NOT NULL,
+  `driver_lname` text NOT NULL,
+  `driver_phone` text NOT NULL,
+  `driver_instruction` text NOT NULL,
+  `created_by` text NOT NULL,
+  `creationdatetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dispatched_time` text NOT NULL,
+  `d_address` text,
+  `d_city` text NOT NULL,
+  `d_state` text NOT NULL,
+  `d_zip` text NOT NULL,
+  `d_contact_name` text,
+  `d_company_name` text,
+  `d_phone1` text,
+  `d_phone2` text,
+  `d_phone3` text,
+  `d_mobile` text,
+  `quote_id` int(255) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `global_tracker_order`
 --
 
 INSERT INTO `global_tracker_order` (`id`, `shipper_name`, `fname`, `lname`, `company`, `email`, `phone1`, `phone2`, `mobile`, `fax`, `address1`, `address2`, `city`, `state`, `zip`, `sel_contact`, `sel_location`, `p_address1`, `p_address2`, `p_city`, `p_state`, `p_zip`, `p_contactname`, `p_companyname`, `p_buyernumber`, `p_phone1`, `p_phone2`, `p_mobile`, `s_date`, `s_vrun`, `s_via`, `info_forShipper`, `notes_shipper`, `vehicle_info`, `carrier_pay`, `bal_paid_by`, `cod_method`, `pickup_terminal_fee`, `delivery_terminal_fee`, `referred_by`, `p_phone3`, `extra`, `extra1`, `carrier_name`, `extra2`, `extra3`, `extra4`, `extra5`, `extra6`, `save_as_default`, `dispatch_contact`, `dispatch_email`, `dispatch_phone`, `dispatch_fax`, `driver_fname`, `driver_lname`, `driver_phone`, `driver_instruction`, `created_by`, `creationdatetime`, `dispatched_time`, `d_address`, `d_city`, `d_state`, `d_zip`, `d_contact_name`, `d_company_name`, `d_phone1`, `d_phone2`, `d_phone3`, `d_mobile`, `quote_id`, `status`) VALUES
-(57, NULL, 'Yann', 'Wang', 'ASDF', 'yxw165730@gmail.com', '4699105086', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/31/2018', '1', '1', '', '', '{\"Vehicle_tariff1\":\"100\",\"Vehicle_deposit1\":\"50\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"ford\",\"Vehicle_model1\":\"Baleno\",\"Vehicle_color1\":\"\",\"Vehicle_plate1\":\"\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '2', '', '2018-07-11', '2018-07-20', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '100.00', '50.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'kunalnimje', '2018-07-18 14:45:35', '07/31/2018 15:42:17 pm', '', 'Burbank', 'CA', '90321', '', '', '4699105086', '', '', '', 41, 5),
+(57, NULL, 'Yann', 'Wang', 'ASDF', 'yxw165730@gmail.com', '4699105084', '', '4699105085', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/31/2018', '1', '1', '', '', '{\"Vehicle_tariff1\":\"100\",\"Vehicle_deposit1\":\"50\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"ford\",\"Vehicle_model1\":\"Baleno\",\"Vehicle_color1\":\"\",\"Vehicle_plate1\":\"\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '2', '', '2018-07-11', '2018-07-20', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '100.00', '50.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'kunalnimje', '2018-07-18 14:45:35', '07/31/2018 15:42:17 pm', '', 'Burbank', 'CA', '90321', '', '', '4699105088', '', '', '', 41, 5),
 (58, NULL, 'Yann', 'Wang', '', 'yxw165730@gmail.com', '4699105086', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', '', 'Burbank', 'CA', '90321', '', '123456', '', '', '', '', '07/28/2018', '0', '2', '', '', '{\"Vehicle_tariff1\":\"200\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"2002\",\"Vehicle_make1\":\"FF\",\"Vehicle_model1\":\"FF\",\"Vehicle_color1\":\"blue\",\"Vehicle_plate1\":\"111\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"12\",\"Vehicle_deliveryState1\":\"AK\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '0.00', 'COD to Cariier', 'Check', '0.00', '0.00', '3', '', '', '', '', '', '', '', '200.00', '150.00', 0, '', '', '', '', '', '', '', '', 'tonygreg', '2018-07-26 09:22:18', '', '', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 4, 1),
 (59, NULL, 'Yan', 'Wang', 'ASDF', 'yxw165730@gmail.com', '4699105086', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', '', 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/29/2018', '1', '1', '', '', '{\"Vehicle_tariff1\":\"200\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"1999\",\"Vehicle_make1\":\"sdsad\",\"Vehicle_model1\":\"Baleno\",\"Vehicle_color1\":\"\",\"Vehicle_plate1\":\"\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"18\",\"Vehicle_deliveryState1\":\"\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '0.00', 'Additional Shipper Pre-payment', 'Cash/Certified Funds', '0.00', '0.00', '3', '', '', '', '', NULL, NULL, NULL, '200.00', '150.00', 0, '', '', '', '', '', '', '', '', 'tonygreg', '2018-07-26 09:22:18', '', '', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 7, 1),
 (60, NULL, 'Yan', 'Wang', 'ASDF', 'yxw165730@gmail.com', '4699105086', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '', '', 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/29/2018', '1', '1', '', '', '{\"Vehicle_tariff1\":\"200\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"1999\",\"Vehicle_make1\":\"sdsad\",\"Vehicle_model1\":\"Baleno\",\"Vehicle_color1\":\"\",\"Vehicle_plate1\":\"\",\"Vehicle_vin1\":\"\",\"Vehicle_lot1\":\"\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"18\",\"Vehicle_deliveryState1\":\"\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '0.00', 'COD to Cariier', 'Check', '0.00', '0.00', '3', '', '', '', '', NULL, NULL, NULL, '200.00', '150.00', 0, '', '', '', '', '', '', '', '', 'tonygreg', '2018-07-26 09:21:59', '', '', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 6, 1),
-(61, NULL, 'Yan', 'Wang', 'ASDF', '', '', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/28/2018', '0', '2', '', '', '{\"Vehicle_tariff1\":\"500\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"jkbsfdk\",\"Vehicle_model1\":\"fusion\",\"Vehicle_color1\":\"red\",\"Vehicle_plate1\":\"222\",\"Vehicle_vin1\":\"2131245656\",\"Vehicle_lot1\":\"111\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"AK\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '10', '', '2018-08-25', '2018-08-29', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '500.00', '150.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'tonygreg', '2018-07-26 11:09:10', '08/02/2018 09:41:57 am', '2009 Burbank Blvd', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 0, 6);
+(61, NULL, 'Yan', 'Wang', 'ASDF', 'YanWang@gmail.com', '', '', '4699105086', '', '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', NULL, NULL, '2009 Burbank Blvd', NULL, 'Burbank', 'CA', '90321', '', '', '', '', '', '', '07/28/2018', '0', '2', '', '', '{\"Vehicle_tariff1\":\"500\",\"Vehicle_deposit1\":\"150\",\"Vehicle_year1\":\"2013\",\"Vehicle_make1\":\"jkbsfdk\",\"Vehicle_model1\":\"fusion\",\"Vehicle_color1\":\"red\",\"Vehicle_plate1\":\"222\",\"Vehicle_vin1\":\"2131245656\",\"Vehicle_lot1\":\"111\",\"Vehicle_tariff2\":\"\",\"Vehicle_deposit2\":\"\",\"Vehicle_year2\":\"\",\"Vehicle_make2\":\"\",\"Vehicle_model2\":\"\",\"Vehicle_color2\":\"\",\"Vehicle_plate2\":\"\",\"Vehicle_vin2\":\"\",\"Vehicle_lot2\":\"\",\"Vehicle_tariff3\":\"\",\"Vehicle_deposit3\":\"\",\"Vehicle_year3\":\"\",\"Vehicle_make3\":\"\",\"Vehicle_model3\":\"\",\"Vehicle_color3\":\"\",\"Vehicle_plate3\":\"\",\"Vehicle_vin3\":\"\",\"Vehicle_lot3\":\"\",\"Vehicle_tariff4\":\"\",\"Vehicle_deposit4\":\"\",\"Vehicle_year4\":\"\",\"Vehicle_make4\":\"\",\"Vehicle_model4\":\"\",\"Vehicle_color4\":\"\",\"Vehicle_plate4\":\"\",\"Vehicle_vin4\":\"\",\"Vehicle_lot4\":\"\",\"Vehicle_tariff5\":\"\",\"Vehicle_deposit5\":\"\",\"Vehicle_year5\":\"\",\"Vehicle_make5\":\"\",\"Vehicle_model5\":\"\",\"Vehicle_color5\":\"\",\"Vehicle_plate5\":\"\",\"Vehicle_vin5\":\"\",\"Vehicle_lot5\":\"\",\"Vehicle_type1\":\"2\",\"Vehicle_deliveryState1\":\"AK\",\"Vehicle_type2\":\"\",\"Vehicle_deliveryState2\":\"\",\"Vehicle_type3\":\"\",\"Vehicle_deliveryState3\":\"\",\"Vehicle_type4\":\"\",\"Vehicle_deliveryState4\":\"\",\"Vehicle_type5\":\"\",\"Vehicle_deliveryState5\":\"\"}', '350.00', 'COD to Cariier', 'Check', '0.00', '0.00', '10', '', '2018-08-25', '2018-08-29', 'AmPm Transportation', '5 business days', 'receiving a signed Bill of Lading', 'Company Check', '500.00', '150.00', 0, 'Tony, Laura', 'Info@AmPmautotransport.Com', '818-956-6686', '747-477-1186', '', '', '', '', 'tonygreg', '2018-07-26 11:09:10', '08/02/2018 09:41:57 am', '2009 Burbank Blvd', 'Burbank', 'CA', '90321', '', '', '', '', '', '', 0, 6);
 
 -- --------------------------------------------------------
 
@@ -1432,9 +1502,8 @@ INSERT INTO `global_tracker_order` (`id`, `shipper_name`, `fname`, `lname`, `com
 -- Table structure for table `global_tracker_quote`
 --
 
-DROP TABLE IF EXISTS `global_tracker_quote`;
-CREATE TABLE IF NOT EXISTS `global_tracker_quote` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `global_tracker_quote` (
+  `id` int(255) NOT NULL,
   `shipper_name` text,
   `fname` text NOT NULL,
   `lname` text NOT NULL,
@@ -1492,9 +1561,8 @@ CREATE TABLE IF NOT EXISTS `global_tracker_quote` (
   `d_phone2` text,
   `d_phone3` text,
   `d_mobile` text,
-  `status` int(11) NOT NULL DEFAULT '3',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+  `status` int(11) NOT NULL DEFAULT '3'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `global_tracker_quote`
@@ -1512,9 +1580,8 @@ INSERT INTO `global_tracker_quote` (`id`, `shipper_name`, `fname`, `lname`, `com
 -- Table structure for table `global_tracker_settings`
 --
 
-DROP TABLE IF EXISTS `global_tracker_settings`;
-CREATE TABLE IF NOT EXISTS `global_tracker_settings` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `global_tracker_settings` (
+  `id` int(11) NOT NULL,
   `deposit` int(11) NOT NULL,
   `first_followup` int(11) NOT NULL,
   `quote_expired` int(11) NOT NULL,
@@ -1525,9 +1592,8 @@ CREATE TABLE IF NOT EXISTS `global_tracker_settings` (
   `carrier_pmt_method` text NOT NULL,
   `cc_gateway` text NOT NULL,
   `order_term` text NOT NULL,
-  `dispatch_term` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `dispatch_term` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `global_tracker_settings`
@@ -1542,9 +1608,8 @@ INSERT INTO `global_tracker_settings` (`id`, `deposit`, `first_followup`, `quote
 -- Table structure for table `global_tracker_user`
 --
 
-DROP TABLE IF EXISTS `global_tracker_user`;
-CREATE TABLE IF NOT EXISTS `global_tracker_user` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `global_tracker_user` (
+  `id` int(255) NOT NULL,
   `fname` text NOT NULL,
   `lname` text,
   `extra` text,
@@ -1558,24 +1623,210 @@ CREATE TABLE IF NOT EXISTS `global_tracker_user` (
   `role` int(50) NOT NULL,
   `etime` text,
   `stime` text,
-  `pageSize` int(11) NOT NULL DEFAULT '50',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `pageSize` int(11) NOT NULL DEFAULT '50'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `global_tracker_user`
 --
 
 INSERT INTO `global_tracker_user` (`id`, `fname`, `lname`, `extra`, `phone`, `username`, `email`, `active`, `creationdatetime`, `last_updated`, `password`, `role`, `etime`, `stime`, `pageSize`) VALUES
-(1, 'Prasanjeet', 'Chakraborty', '', '2343676564', 'a123456', 'das@das.com', 1, '2018-03-15 17:50:05', '2018-04-18 11:11:03', 'aaa', 2, NULL, NULL, 50),
-(2, 'Tigran', 'Gregorian', '', '123312123', 'tonygreg', 'tony@gmail.com', 1, '2018-03-15 18:00:58', '2018-04-18 10:06:34', 'aaa', 1, NULL, NULL, 50),
+(1, 'Marvin', 'Harootoonyan', '', '8188234694', 'marvinh', 'marvinharootoonyan@gmail.com', 1, '2018-03-15 17:50:05', '2018-04-18 11:11:03', 'password', 2, NULL, NULL, 50),
+(2, 'Michael', 'Harootoonyan', '', '8182091548', 'mharoot', 'michaelharootoonyan@gmail.com', 1, '2018-03-15 18:00:58', '2018-04-18 10:06:34', 'password', 1, NULL, NULL, 50),
 (3, 'Kunal', 'Nimje', '', '6785698', 'kunalnimje', 'khjvgvjh@dfsf.com', 1, '2018-03-16 06:47:27', '2018-04-18 10:05:41', 'aaa', 2, NULL, NULL, 50);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `dot_tracker_emailtemp`
+--
+ALTER TABLE `dot_tracker_emailtemp`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_login`
+--
+ALTER TABLE `dot_tracker_login`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_notes`
+--
+ALTER TABLE `dot_tracker_notes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_order_history`
+--
+ALTER TABLE `dot_tracker_order_history`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_payment1`
+--
+ALTER TABLE `dot_tracker_payment1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_payment2`
+--
+ALTER TABLE `dot_tracker_payment2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_quote_history`
+--
+ALTER TABLE `dot_tracker_quote_history`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_shipper`
+--
+ALTER TABLE `dot_tracker_shipper`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dot_tracker_sms`
+--
+ALTER TABLE `dot_tracker_sms`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_accountinfo`
+--
+ALTER TABLE `global_tracker_accountinfo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_dispatch`
+--
+ALTER TABLE `global_tracker_dispatch`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_order`
+--
+ALTER TABLE `global_tracker_order`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_quote`
+--
+ALTER TABLE `global_tracker_quote`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_settings`
+--
+ALTER TABLE `global_tracker_settings`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `global_tracker_user`
+--
+ALTER TABLE `global_tracker_user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_emailtemp`
+--
+ALTER TABLE `dot_tracker_emailtemp`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_login`
+--
+ALTER TABLE `dot_tracker_login`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_notes`
+--
+ALTER TABLE `dot_tracker_notes`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_order_history`
+--
+ALTER TABLE `dot_tracker_order_history`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1254;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_payment1`
+--
+ALTER TABLE `dot_tracker_payment1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_payment2`
+--
+ALTER TABLE `dot_tracker_payment2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_quote_history`
+--
+ALTER TABLE `dot_tracker_quote_history`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=418;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_shipper`
+--
+ALTER TABLE `dot_tracker_shipper`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `dot_tracker_sms`
+--
+ALTER TABLE `dot_tracker_sms`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_accountinfo`
+--
+ALTER TABLE `global_tracker_accountinfo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_dispatch`
+--
+ALTER TABLE `global_tracker_dispatch`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_order`
+--
+ALTER TABLE `global_tracker_order`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_quote`
+--
+ALTER TABLE `global_tracker_quote`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_settings`
+--
+ALTER TABLE `global_tracker_settings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `global_tracker_user`
+--
+ALTER TABLE `global_tracker_user`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 DELIMITER $$
 --
 -- Events
 --
-DROP EVENT `my_event`$$
 CREATE DEFINER=`root`@`localhost` EVENT `my_event` ON SCHEDULE EVERY 1 DAY STARTS '2018-06-01 00:00:00' ENDS '2018-08-16 00:00:00' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE `global_tracker_quote` SET STATUS='1' WHERE STATUS='3'$$
 
 DELIMITER ;
