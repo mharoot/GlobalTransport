@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0ac38c8-360e-4196-be3d-056b5be5953e" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ContactForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Order</find>
+      <find>o</find>
+      <find>orderF</find>
+      <find>orderForm</find>
+      <find>notes</find>
+      <find>Fili</find>
+      <find>Details</find>
+      <find>Balance Paid By</find>
+      <find>order</find>
+      <find>echo</find>
+      <find>bal_paid_by</find>
+      <find>bal_pa</find>
+      <find>Color</find>
+      <find>saveScr</find>
+      <find>getVehicleInfoforOrderReceipt</find>
+      <find>ajax</find>
+      <find>updateContact</find>
+      <find>getShipperData</find>
+      <find>getPar</find>
+      <find>updateVehVal</find>
+      <find>GlobalTrackerQuote</find>
+      <find>pickup</find>
+      <find>img</find>
+      <find>addVe</find>
+      <find>p</find>
+      <find>phpinfo</find>
+      <find>toshipper</find>
+      <find>stat</find>
+      <find>allA</find>
+      <find>originshipper</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>: &lt;/label&gt;</replace>
+      <replace>!Yii::app()-&gt;user-&gt;isGuest || 1</replace>
+      <replace>1</replace>
+      <replace>2&quot;</replace>
+      <replace>3&quot;</replace>
+      <replace>4&quot;</replace>
+      <replace>Vehicle</replace>
+      <replace>5&quot;</replace>
+      <replace>log</replace>
+      <replace>deposit</replace>
+      <replace>748cab</replace>
+      <replace>onkeyup</replace>
+      <replace>model</replace>
+      <replace>Order</replace>
+      <replace>global_tracker</replace>
+      <replace>info@globalautotransportation.com</replace>
+      <replace>&lt;option value=&quot;222&quot;&gt;RV&lt;/option&gt;</replace>
+      <replace>&lt;option value=&quot;200&quot;&gt;Sedan Large&lt;/option&gt;</replace>
+      <replace>&lt;i class=&quot;no-data&quot;&gt;</replace>
+      <replace>textField</replace>
+      <replace>d_</replace>
+      <replace>Global Auto Transport</replace>
+      <replace>quoteForm</replace>
+      <replace>Quote</replace>
+      <replace>quote</replace>
+      <replace>echo '&amp;nbsp;'.</replace>
+      <replace>GlobalTrackerOrder</replace>
+      <replace>for=&quot;nameon_card&quot; style=&quot;display:none;&quot;&gt;Color</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/protected</dir>
+      <dir>$PROJECT_DIR$/protected/views/quoteForm</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/protected/models/DotTrackerUser.php" />
+        <option value="$PROJECT_DIR$/protected/config/database.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/create.php" />
+        <option value="$PROJECT_DIR$/.idea/sada.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/update.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/protected/controllers/AutomatedTemplateController.php" />
+        <option value="$PROJECT_DIR$/protected/views/automatedTemplate/_form.php" />
+        <option value="$PROJECT_DIR$/protected/models/DotTrackerSms.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/authorize.php" />
+        <option value="$PROJECT_DIR$/protected/models/LoginForm.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/login.php" />
+        <option value="$PROJECT_DIR$/sendSmsService.php" />
+        <option value="$PROJECT_DIR$/sendSmsProcess.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/admin.php" />
+        <option value="$PROJECT_DIR$/protected/views/account/create.php" />
+        <option value="$PROJECT_DIR$/protected/models/GlobalTrackerShipper.php" />
+        <option value="$PROJECT_DIR$/protected/views/account/admin.php" />
+        <option value="$PROJECT_DIR$/protected/views/account/update.php" />
+        <option value="$PROJECT_DIR$/protected/views/dev/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/dev/view2.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/DevController.php" />
+        <option value="$USER_HOME$/Downloads/print-order.html" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/orderReceipt.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/account/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/account/view.php" />
+        <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/authorize.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/orderReceipt.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/models/GlobalTrackerQuote.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/view1.php" />
+        <option value="$PROJECT_DIR$/protected/models/GlobalTrackerOrder.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/QuoteFormController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/AccountController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/OrderFormController.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/view1.php" />
+        <option value="$PROJECT_DIR$/protected/views/orderForm/_form.php" />
+        <option value="$PROJECT_DIR$/protected/components/FilingGenerics.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/admin.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/_form.php" />
+        <option value="$PROJECT_DIR$/protected/views/quoteForm/view.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/bower_components/drawingboard.js/package.json" />
+      <path value="$PROJECT_DIR$/bower_components/simple-undo/package.json" />
+      <path value="$PROJECT_DIR$/js/clipboard/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="global-software1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="global-software1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="global-software1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="global-software1" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="global-software1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="global-software1" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="global-software1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="global-software1" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="quoteForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/views" />
+      <recent name="$PROJECT_DIR$/protected/controllers" />
+      <recent name="$PROJECT_DIR$/protected/models" />
+      <recent name="$PROJECT_DIR$/protected/views/orderForm" />
+      <recent name="$PROJECT_DIR$/protected/views/dev" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0ac38c8-360e-4196-be3d-056b5be5953e" name="Default" comment="" />
+      <created>1526706610795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526706610795</updated>
+      <workItem from="1526706612939" duration="15193000" />
+      <workItem from="1526829795948" duration="2433000" />
+      <workItem from="1526903527634" duration="11892000" />
+      <workItem from="1526968099795" duration="363000" />
+      <workItem from="1526971636066" duration="18000" />
+      <workItem from="1527005270214" duration="68000" />
+      <workItem from="1527005340489" duration="12140000" />
+      <workItem from="1527026328187" duration="23000" />
+      <workItem from="1527028286128" duration="675000" />
+      <workItem from="1527039285187" duration="74000" />
+      <workItem from="1527110051015" duration="12000" />
+      <workItem from="1527190223876" duration="228000" />
+      <workItem from="1527277073604" duration="6203000" />
+      <workItem from="1527438904840" duration="475000" />
+      <workItem from="1527525205558" duration="9576000" />
+      <workItem from="1527613770283" duration="1815000" />
+      <workItem from="1527622778652" duration="1319000" />
+      <workItem from="1527703451598" duration="859000" />
+      <workItem from="1527765089328" duration="12340000" />
+      <workItem from="1527843312512" duration="829000" />
+      <workItem from="1527844947231" duration="12000" />
+      <workItem from="1528049090021" duration="1708000" />
+      <workItem from="1528203108820" duration="4614000" />
+      <workItem from="1528302559809" duration="317000" />
+      <workItem from="1528373576223" duration="374000" />
+      <workItem from="1528390250468" duration="36000" />
+      <workItem from="1529691078149" duration="1437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="85033000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24895833" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.329602" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329602" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/controllers/OrderFormController.php</url>
+          <line>227</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/protected/components/FilingGenerics.php</url>
+          <line>358</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sendSmsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendSmsProcess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/order-view.html" />
+    <entry file="file://$PROJECT_DIR$/protected/views/account/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/account/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/account/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dev/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/order-view (1).html" />
+    <entry file="file://$USER_HOME$/Downloads/shipping-invoice.html" />
+    <entry file="file://$USER_HOME$/Downloads/order-reciept.html" />
+    <entry file="file://$PROJECT_DIR$/protected/views/dev/view1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="202" column="110" selection-start-line="202" selection-start-column="110" selection-end-line="202" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dev/view2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="219" column="6" selection-start-line="219" selection-start-column="6" selection-end-line="219" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/print-order.html" />
+    <entry file="file://$PROJECT_DIR$/protected/controllers/DevController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/view2.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dev/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" selection-start-line="11" selection-end-line="232" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/shipper-account.html" />
+    <entry file="file://$PROJECT_DIR$/protected/views/account/_view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/account/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/shipper-view.html" />
+    <entry file="file://$PROJECT_DIR$/protected/views/account/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="112" column="63" lean-forward="true" selection-end-line="112" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/authorize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="576" column="64" selection-start-line="576" selection-start-column="64" selection-end-line="576" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/orderReceipt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="218" column="171" selection-start-line="218" selection-start-column="171" selection-end-line="218" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/quote-form.html" />
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/orderReceipt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="247" column="67" selection-start-line="247" selection-start-column="67" selection-end-line="247" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js" />
+    <entry file="file://$PROJECT_DIR$/protected/controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="12" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/GlobalTrackerShipper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="103" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/_search.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/QuoteFormController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/OrderFormController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+          <folding>
+            <element signature="n#actionDelete#0;n#OrderFormController#0;n#!!top" />
+            <element signature="n#actionIndex#0;n#OrderFormController#0;n#!!top" />
+            <element signature="n#actionAdmin#0;n#OrderFormController#0;n#!!top" />
+            <element signature="n#loadModel#0;n#OrderFormController#0;n#!!top" />
+            <element signature="n#performAjaxValidation#0;n#OrderFormController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/view1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="154" column="103" selection-start-line="154" selection-start-column="103" selection-end-line="154" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/GlobalTrackerQuote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="2045" column="85" selection-start-line="2024" selection-start-column="51" selection-end-line="2045" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/FilingGenerics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="568" column="13" selection-start-line="568" selection-start-column="13" selection-end-line="568" selection-end-column="13" />
+          <folding>
+            <element signature="n#getVehicleInfoforView#0;n#FilingGenerics#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/NotesController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/orderForm/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="4" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/view1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="149" column="74" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/GlobalTrackerOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="117" column="15" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="438" column="74" selection-start-line="438" selection-start-column="74" selection-end-line="438" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/DotTrackerNotes.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/notes/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/quoteForm/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
