@@ -904,7 +904,7 @@ $('.search-form form').submit(function(){
                 <span>Select : <input type="checkbox" id="allA" style="margin-right:10px;" onclick="checkAllA();"><span onclick="selectAllA();">All</span> / <span
                             onclick="unSelectAllA();">None</span> </span>
             </div>
-
+-->
             <div id="menu4" class="tab-pane fade">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
                     'id'=>'global-tracker-order-grid-result',
@@ -1022,7 +1022,7 @@ $('.search-form form').submit(function(){
                         ),
                     ),
                 )); ?>
-            </div> -->
+            </div> 
         </div>
 
         <span style="float:left;">Show:
