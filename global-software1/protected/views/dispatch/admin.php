@@ -58,7 +58,8 @@ $('.search-form form').submit(function(){
         <a style="float: right;" class="btn btn-success" href="<?php echo Yii::app()->createUrl('dispatch/create');?>"><i class="fa fa-add"></i> Create Order</a>
 
         <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#menu6">Dispatched
+            <!-- <li><a data-toggle="tab" href="#menu6">Dispatched -->
+            <li><a data-toggle="tab" href="#home">Dispatched
                 (<?php echo $model->search(GlobalTrackerDispatch::$enumStatus['dispatched'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <!-- <li class="active"><a data-toggle="tab" href="#home">Orders
                 (<?php //echo $model->search(GlobalTrackerDispatch::$enumStatus['order'], $pageSize)->getTotalItemCount(); ?>)</a></li> -->
@@ -77,6 +78,118 @@ $('.search-form form').submit(function(){
 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
+            <?php $this->widget('zii.widgets.grid.CGridView', array(
+                    'id'=>'global-tracker-order-grid-dispatched',
+                    'dataProvider' => $model->search(GlobalTrackerDispatch::$enumStatus['dispatched'], $pageSize),
+                    'filter'=>$model,
+                    'columns'=>array(
+                        array(
+                            'class' => 'CCheckBoxColumn',
+                            'selectableRows' => 2,
+                            'value' => 'FilingGenerics::encryptKey($data->id)',
+                            'htmlOptions' => array('width' => '3%'),
+                        ),
+                        array(
+                            'name'=>'id',
+                            'value'=>function($data) {
+                                echo '<a href="'.Yii::app()->createUrl('dispatch/view',array('id'=>$data->id)).'">'.FilingGenerics::showOrderId($data->id).'</a>';
+                            },
+                            'htmlOptions' => array('width' => '5%', 'style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'creationdatetime',
+                            'header'=>'Created',
+                            'value'=>function($data) {
+                                echo FilingGenerics::showDate($data->creationdatetime);
+                            },
+                            'htmlOptions' => array('width' => '8%', 'style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'fname',
+                            'header'=>'Shipper',
+                            'value'=>function($data) {
+                                echo $data->fname.' '.$data->lname;
+                                echo '<br>'.FilingGenerics::showPhone($data->mobile);
+                                echo '<br><a href="mailto:'.$data->email.'">'.$data->email.'</a>';
+                            },
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'vehicle_info',
+                            'header'=>'Vehicle',
+                            'value'=>function($data) {
+                               print_r(FilingGenerics::getVehicleInfoforView($data->id));
+                            },
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'city',
+                            'header'=>'Orig/Dest',
+                            'value'=>function($data) {
+                                echo '<div>'.$data->p_city . ', ' . $data->p_state . '/<br/>'.$data->d_city . ', ' . $data->d_state.'</div>';
+                            },
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'extra5',
+                            'header'=>'Tariff',
+                            'value'=>function($data) {
+                                echo '$'.$data->extra5;
+                            },
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'s_date',
+                            'header'=>'1st Avail',
+                            'value'=>function($data) {
+                                echo FilingGenerics::showYMD($data->s_date);
+                            },
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'created_by',
+                            'visible'=>FilingGenerics::getuserRole(Yii::app()->user->id)==LoginForm::$allowedRole?true:false,
+                            'filter'=> CHtml::activeDropDownList($model, 'created_by',FilingGenerics::getUserList(), array('empty' => 'All Users')),
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                        ),
+                        array(
+                            'name'=>'carrier_pay',
+                            'value'=>function($data) {
+                                $carrier = FilingGenerics::getCarrierInfo($data->carrier_name);
+                                echo '<label>Carrier:</label><a href="'.Yii::app()->createUrl('account/view&type=2',array('id'=>$carrier->id)).'">'.$carrier->company_name.'</a><br/><label>Phone:</label>' . FilingGenerics::showPhone($carrier->phone1) . '<br/>';
+                                if($data->carrier_pay != '') {
+                                    echo '<label>Carrier Pay:</label>$'.$data->carrier_pay;
+                                } else {
+                                    echo '<label>Carrier Pay:</label>(none)';
+                                }
+                            },
+                            'filter'=>'',
+                        ),
+                        array(
+                            'name'=>'Status',
+                            'filter'=>'',
+                            'value'=>function($data) {
+                                echo GlobalTrackerDispatch::$arrStatus[$data->status];
+                            },
+                            'htmlOptions' => array('style' => 'text-align:center'),
+                        ),
+                        array(
+                            'class'=>'CButtonColumn',
+                            'template'=>'{view} {update}'
+                        ),
+                    ),
+                )); ?>
+
+                <span>Select : <input type="checkbox" id="allA" style="margin-right:10px;" onclick="checkAllA();"><span onclick="selectAllA();">All</span> / <span
+                            onclick="unSelectAllA();">None</span> </span>
+            </div>
+            <!-- <div id="home" class="tab-pane fade in active">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
                     'id'=>'global-tracker-order-grid-order',
                     'dataProvider' => $model->search(GlobalTrackerDispatch::$enumStatus['order'], $pageSize),
@@ -437,7 +550,7 @@ $('.search-form form').submit(function(){
 
                 <span>Select : <input type="checkbox" id="allA" style="margin-right:10px;" onclick="checkAllA();"><span onclick="selectAllA();">All</span> / <span
                             onclick="unSelectAllA();">None</span> </span>
-            </div>
+            </div> -->
 
             <div id="menu5" class="tab-pane fade">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
@@ -559,7 +672,7 @@ $('.search-form form').submit(function(){
                             onclick="unSelectAllA();">None</span> </span>
             </div>
 
-            <div id="menu6" class="tab-pane fade">
+            <!-- <div id="menu6" class="tab-pane fade">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
                     'id'=>'global-tracker-order-grid-dispatched',
                     'dataProvider' => $model->search(GlobalTrackerDispatch::$enumStatus['dispatched'], $pageSize),
@@ -909,7 +1022,7 @@ $('.search-form form').submit(function(){
                         ),
                     ),
                 )); ?>
-            </div>
+            </div> -->
         </div>
 
         <span style="float:left;">Show:
