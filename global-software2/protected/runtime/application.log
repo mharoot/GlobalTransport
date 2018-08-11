@@ -28565,3 +28565,1738 @@ in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
 2018/08/11 14:05:15 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
 in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
 in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 23:11:09 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=62
+---
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:13:37 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:17 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 23:14:21 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(571): DispatchController->loadModel('63')
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionChangeStatus()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('changeStatus')
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/change...')
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/changeStatus&id=NjNhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=MWFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=dispatch/update&id=63&status=6
+---
+2018/08/11 23:14:23 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(571): DispatchController->loadModel('63')
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionChangeStatus()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('changeStatus')
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/change...')
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/changeStatus&id=NjNhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=MWFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=dispatch/update&id=63&status=6
+---
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:14:51 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 23:21:28 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(373): OrderFormController->loadModel('63')
+#1 [internal function]: OrderFormController->actionUpdate('63')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/updat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/update&id=63
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/admin
+---
+2018/08/11 23:21:33 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(373): OrderFormController->loadModel('63')
+#1 [internal function]: OrderFormController->actionUpdate('63')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/updat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/update&id=63
+---
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:22:21 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 23:22:42 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:22:47 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:22:56 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:23:17 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(527): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionIndex()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:23:22 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:23:39 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:23:50 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:26:40 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:27:09 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:30:39 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:30:49 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:31:00 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:31:25 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:31:51 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:31:54 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:32:07 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NmFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NmFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:32:07 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=61
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:32:18 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61
+---
+2018/08/11 23:32:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=6
+---
+2018/08/11 23:32:33 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '5')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=5
+---
+2018/08/11 23:32:36 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=6
+---
+2018/08/11 23:32:39 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '5')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=5
+---
+2018/08/11 23:32:40 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=6
+---
+2018/08/11 23:32:40 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61
+---
+2018/08/11 23:32:40 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=61
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:34:25 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(105): OrderFormController->loadModel('NjFhc2RzYWpoa2d...')
+#1 [internal function]: OrderFormController->actionDispatch('NjFhc2RzYWpoa2d...', 'NWFzZHNhamhrZ2p...')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=NjFhc2RzYWpoa2dqZmhnc2FnZGphMjM0ZHNkc3NhamdkbnZzZDIxMw==&status=NWFzZHNhamhrZ2pmaGdzYWdkamEyMzRkc2Rzc2FqZ2RudnNkMjEz
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:34:25 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '5')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=5
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 23:36:28 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:36:54 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php:705
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(101): DispatchController->loadModel('61')
+#1 [internal function]: DispatchController->actionDispatch('61', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DispatchController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DispatchController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dispatch/dispat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=61&status=6
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=61
+---
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:36:55 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:38:25 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (608)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 23:38:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:783)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#3 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(191): DispatchController->render()
+#4 unknown(0): DispatchController->actionDispatch()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=60&status=6
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (783)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\dispatch.php (72)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (191)
+2018/08/11 23:38:29 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:783)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#3 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(191): DispatchController->render()
+#4 unknown(0): DispatchController->actionDispatch()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=60&status=6
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (783)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\dispatch.php (72)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (191)
+2018/08/11 23:38:57 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(527): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionIndex()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/&id=60
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:39:02 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:39:24 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(527): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionIndex()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#30 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/&id=60
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:39:26 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:783)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#3 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(191): DispatchController->render()
+#4 unknown(0): DispatchController->actionDispatch()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/dispatch&id=60&status=6
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (783)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\dispatch.php (72)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (191)
+2018/08/11 23:39:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(373): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionUpdate('60')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/updat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/update&id=60
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/view&id=60
+---
+2018/08/11 23:39:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:689
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(224): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionView('60')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/view')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/view&id=60
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/admin
+---
+2018/08/11 23:39:29 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:40:22 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 23:41:10 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php:377)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(639): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(623): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(579): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\grid\CGridView.php(489): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(182): CGridView->run()
+#12 C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php(82): DispatchController->widget()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CBaseController.php(95): DispatchController->renderInternal()
+#15 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(872): DispatchController->renderFile()
+#16 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(785): DispatchController->renderPartial()
+#17 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php(540): DispatchController->render()
+#18 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(49): DispatchController->actionAdmin()
+#19 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): DispatchController->runAction()
+#21 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): DispatchController->filterAccessControl()
+#24 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#25 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): DispatchController->runActionWithFilters()
+#27 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): DispatchController->run()
+#28 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=dispatch/admin
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\components\FilingGenerics.php (377)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (124)
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\views\dispatch\admin.php (82)
+2018/08/11 14:56:35 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (111)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:56:35 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (111)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:56:35 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (111)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 14:56:35 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (111)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:33:13 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 00:39:38 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:704
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(113): OrderFormController->loadModel('59')
+#1 [internal function]: OrderFormController->actionDispatch('59', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=59&status=6
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=59
+---
+2018/08/12 00:39:42 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:704
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(113): OrderFormController->loadModel('59')
+#1 [internal function]: OrderFormController->actionDispatch('59', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=59&status=6
+---
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:40:05 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:41:42 [error] [exception.Error] Error: Call to a member function redirect() on null in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:220
+Stack trace:
+#0 [internal function]: OrderFormController->actionDispatch('60', '6')
+#1 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+---
+2018/08/12 00:45:34 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:706
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(113): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionDispatch('60', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+---
+2018/08/12 00:45:40 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:706
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(113): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionDispatch('60', '6')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('dispatch')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/dispa...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/update&id=60
+---
+2018/08/12 00:45:42 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:706
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(412): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionUpdate('60')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/updat...')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/update&id=60
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/view&id=60
+---
+2018/08/12 00:45:42 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php:706
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(263): OrderFormController->loadModel('60')
+#1 [internal function]: OrderFormController->actionView('60')
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OrderFormController), Array)
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderFormController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('orderForm/view')
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/view&id=60
+HTTP_REFERER=http://localhost/GlobalTransport/global-software2/index.php?r=orderForm/admin
+---
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:45:56 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:46:26 [error] [php] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php:796) (C:\xampp\htdocs\GlobalTransport\yii\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php(224): OrderFormController->redirect()
+#1 unknown(0): OrderFormController->actionDispatch()
+#2 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\GlobalTransport\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(134): OrderFormController->runAction()
+#6 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CInlineFilter.php(58): OrderFormController->filterAccessControl()
+#9 C:\xampp\htdocs\GlobalTransport\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CController.php(265): OrderFormController->runActionWithFilters()
+#12 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(282): OrderFormController->run()
+#13 C:\xampp\htdocs\GlobalTransport\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\GlobalTransport\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\GlobalTransport\global-software2\index.php(13): CWebApplication->run()
+REQUEST_URI=/GlobalTransport/global-software2/index.php?r=orderForm/dispatch&id=60&status=6
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (224)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:48:50 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)

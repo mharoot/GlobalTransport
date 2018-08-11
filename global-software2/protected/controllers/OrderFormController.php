@@ -5,50 +5,50 @@ use Twilio\Rest\Client;
 require_once ($path);
 
 class OrderFormController extends Controller {
-	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
-	public $layout='//layouts/column2';
+    /**
+     * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+     * using two-column layout. See 'protected/views/layouts/column2.php'.
+     */
+    public $layout='//layouts/column2';
 
-	/**
-	 * @return array action filters
-	 */
-	public function filters() {
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-		);
-	}
+    /**
+     * @return array action filters
+     */
+    public function filters() {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+            'postOnly + delete', // we only allow deletion via POST request
+        );
+    }
 
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules() {
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+    /**
+     * Specifies the access control rules.
+     * This method is used by the 'accessControl' filter.
+     * @return array access control rules
+     */
+    public function accessRules() {
+        return array(
+            array('allow',  // allow all users to perform 'index' and 'view' actions
                 'actions'=>array('index','authorizeSignature','saveScr','thanks'),
                 'users'=>array('*'),
             ),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','changeStatus','changeUser', 'orderReceipt', 'payment'),
-				'users'=>array('@'),
-			),
+            array('allow', // allow authenticated user to perform 'create' and 'update' actions
+                'actions'=>array('create','update'),
+                'users'=>array('@'),
+            ),
+            array('allow', // allow admin user to perform 'admin' and 'delete' actions
+                'actions'=>array('admin','delete','changeStatus','changeUser', 'orderReceipt', 'payment'),
+                'users'=>array('@'),
+            ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions'=>array('view', 'history', 'dispatch', 'dispatchSheet'),
                 'users'=>array('@'),
             ),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
+            array('deny',  // deny all users
+                'users'=>array('*'),
+            ),
+        );
+    }
 
     public function actionThanks() {
         $this->render('thanks');
@@ -101,6 +101,14 @@ class OrderFormController extends Controller {
         ));
     }
 
+    /**
+     * This method is used inside ?r=orderForm/dispatch&id=59&status=6.
+     * Here the record is being stripped from the order table and put into the
+     * dispatch table.
+     *
+     * @param $id order id
+     * @param $status '5': not signed; '6': Dispatched
+     */
     public function actionDispatch($id, $status) {
         $oldValues = $this->loadModel($id);
         $model = $this->loadModel($id);
@@ -117,7 +125,7 @@ class OrderFormController extends Controller {
                 $settings->save();
             }
 
-            //Update the Vehicle Tariff
+            // Update the Vehicle Tariff
             $vehInfo = json_decode($model->vehicle_info);
             for($i=1; $i<=5; $i++) {
                 if(isset($_POST['new_Vehicle_tariff'.$i])) {
@@ -135,17 +143,18 @@ class OrderFormController extends Controller {
             }
             $model->vehicle_info = json_encode($vehInfo);
 
-            //Update the dispatched time
+            // Update the dispatched time
             if(empty($model->dispatched_time)) {
                 date_default_timezone_set('America/Los_Angeles');
                 $model->dispatched_time = date("m/d/Y H:i:s a");
             }
 
-            //Update the status
+            // Update the status
             $model->status = $status;
 
+            // Critical Section
             if($model->save()) {
-                //Get the changed value pairs
+                // Get the changed value pairs
                 date_default_timezone_set('America/Los_Angeles');
                 $curTime = date("m/d/Y H:i:s a");
 
@@ -156,7 +165,7 @@ class OrderFormController extends Controller {
                         for($i=1; $i<=5; $i++) {
                             if($oldObj->{'Vehicle_tariff'.$i} != $newObj->{'Vehicle_tariff'.$i}) {
                                 $this->insertHistoryO($model->id,'Vehicle_tariff'.$i,$oldObj->{'Vehicle_tariff'.$i},$newObj->{'Vehicle_tariff'.$i},$curTime,$model->created_by);
-                            } 
+                            }
                             if($oldObj->{'Vehicle_deposit'.$i} != $newObj->{'Vehicle_deposit'.$i}) {
                                 $this->insertHistoryO($model->id,'Vehicle_deposit'.$i,$oldObj->{'Vehicle_deposit'.$i},$newObj->{'Vehicle_deposit'.$i},$curTime,$model->created_by);
                             }
@@ -182,8 +191,39 @@ class OrderFormController extends Controller {
                         $this->insertHistoryO($model->id,$name,$old,$new,$curTime,$model->created_by);
                     }
                 }
+                /*
+                 * Status is being changed to either 'not signed' or 'Dispatched'.
+                 * Moving data from order table to dispatch table.
+                 */
+                if($status == 5 || $status == 6) {
+                    Yii::app()->getModule('GlobalTrackerDispatch');
+                    $dispatchModel = new GlobalTrackerDispatch;
+                    $dispatchModel->attributes = $model->attributes;
+                    $dispatchModel->status = $status;
+                    $dispatchModel->id = $model->id;
+
+                    if($dispatchModel->validate()) {
+                        $dispatchModel->save();
+                        $success=true;
+                        $msg='Status updated successfully';
+                    } else {
+                        $success=false;
+                        $msg='Status could not be updated';
+                    }
+//                    echo CJSON::encode(array('success'=>$success,'msg'=>$msg));
+
+                    // remove data from order table
+                    $model->delete();
+
+                    // redirect using dispatch controller
+                    Yii::app()->runController("dispatch/view/id/$dispatchModel->id");
+//                    $dispatchController = Yii::app()->createController('DispatchController');
+//                    $dispatchController->redirect(array('view', 'id' => $dispatchModel->id));
+                    return;
+                }
 
                 $this->redirect(array('view', 'id' => $model->id));
+
             } else {
                 $this->redirect(array('dispatch', 'model' => $model));
             }
@@ -215,15 +255,15 @@ class OrderFormController extends Controller {
         ));
     }*/
 
-	/**
-	 * Displays a particular model.
-	 * @param integer $id the ID of the model to be displayed
-	 */
-	public function actionView($id) {
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
+    /**
+     * Displays a particular model.
+     * @param integer $id the ID of the model to be displayed
+     */
+    public function actionView($id) {
+        $this->render('view',array(
+            'model'=>$this->loadModel($id),
+        ));
+    }
 
     public function actionHistory($id) {
         $this->render('history',array(
@@ -237,20 +277,20 @@ class OrderFormController extends Controller {
         ));
     }
 
-	/**
-	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
-	 */
-	public function actionCreate() {
-		$model = new GlobalTrackerOrder;
+    /**
+     * Creates a new model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     */
+    public function actionCreate() {
+        $model = new GlobalTrackerOrder;
         $sendSms = false;
         $sendEmail = false;
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
 
-		if(isset($_POST['GlobalTrackerOrder']))
-		{
-			$model->attributes = $_POST['GlobalTrackerOrder'];
+        if(isset($_POST['GlobalTrackerOrder']))
+        {
+            $model->attributes = $_POST['GlobalTrackerOrder'];
             if(array_key_exists('isSave',$_POST))
             {
                 $account = new GlobalTrackerShipper();
@@ -282,9 +322,9 @@ class OrderFormController extends Controller {
                 }
             }
 
-			$model->creationdatetime = new CDbExpression('NOW()');
-			$model->created_by = Yii::app()->user->id;
-			if($model->save()) {
+            $model->creationdatetime = new CDbExpression('NOW()');
+            $model->created_by = Yii::app()->user->id;
+            if($model->save()) {
                 if(isset($_POST['but2'])) {
                     $sendEmail = true;
                 } else if(isset($_POST['but3'])) {
@@ -310,7 +350,7 @@ class OrderFormController extends Controller {
                         for($i=1; $i<=5; $i++) {
                             if($obj->{'Vehicle_tariff'.$i} != '') {
                                 $this->insertHistoryO($model->id,'Vehicle_tariff'.$i,'none',$obj->{'Vehicle_tariff'.$i},$curTime,$model->created_by);
-                            } 
+                            }
                             if($obj->{'Vehicle_deposit'.$i} != '') {
                                 $this->insertHistoryO($model->id,'Vehicle_deposit'.$i,'none',$obj->{'Vehicle_deposit'.$i},$curTime,$model->created_by);
                             }
@@ -328,7 +368,7 @@ class OrderFormController extends Controller {
                             }
                             if($obj->{'Vehicle_color'.$i} != '') {
                                 $this->insertHistoryO($model->id,'Vehicle_color'.$i,'none',$obj->{'Vehicle_color'.$i},$curTime,$model->created_by);
-                            } 
+                            }
                             if($obj->{'Vehicle_plate'.$i} != '') {
                                 $this->insertHistoryO($model->id,'Vehicle_plate'.$i,'none',$obj->{'Vehicle_plate'.$i},$curTime,$model->created_by);
                             }
@@ -357,31 +397,31 @@ class OrderFormController extends Controller {
                 }
                 $this->redirect(array('view', 'id' => $model->id));
             }
-		}
+        }
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
+        $this->render('create',array(
+            'model'=>$model,
+        ));
+    }
 
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id) {
-		$model=$this->loadModel($id);
+    /**
+     * Updates a particular model.
+     * If update is successful, the browser will be redirected to the 'view' page.
+     * @param integer $id the ID of the model to be updated
+     */
+    public function actionUpdate($id) {
+        $model=$this->loadModel($id);
         $oldValues = $this->loadModel($id);
         $sendSms=false;
         $sendEmail=false;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
 
-		if(isset($_POST['GlobalTrackerOrder']))
-		{
-			$model->attributes=$_POST['GlobalTrackerOrder'];
-			if($model->save()) {
+        if(isset($_POST['GlobalTrackerOrder']))
+        {
+            $model->attributes=$_POST['GlobalTrackerOrder'];
+            if($model->save()) {
                 if(isset($_POST['but2'])) {
                     $sendEmail = true;
                 } else if(isset($_POST['but3'])) {
@@ -408,7 +448,7 @@ class OrderFormController extends Controller {
                         for($i=1; $i<=5; $i++) {
                             if($oldObj->{'Vehicle_tariff'.$i} != $newObj->{'Vehicle_tariff'.$i}) {
                                 $this->insertHistoryO($model->id,'Vehicle_tariff'.$i,$oldObj->{'Vehicle_tariff'.$i},$newObj->{'Vehicle_tariff'.$i},$curTime,$model->created_by);
-                            } 
+                            }
                             if($oldObj->{'Vehicle_deposit'.$i} != $newObj->{'Vehicle_deposit'.$i}) {
                                 $this->insertHistoryO($model->id,'Vehicle_deposit'.$i,$oldObj->{'Vehicle_deposit'.$i},$newObj->{'Vehicle_deposit'.$i},$curTime,$model->created_by);
                             }
@@ -523,46 +563,46 @@ class OrderFormController extends Controller {
 
                 $this->redirect(array('view', 'id' => $model->id));
             }
-		}
+        }
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
-	}
+        $this->render('update',array(
+            'model'=>$model,
+        ));
+    }
 
-	/**
-	 * Deletes a particular model.
-	 * If deletion is successful, the browser will be redirected to the 'admin' page.
-	 * @param integer $id the ID of the model to be deleted
-	 */
-	public function actionDelete($id) {
-		$this->loadModel($id)->delete();
+    /**
+     * Deletes a particular model.
+     * If deletion is successful, the browser will be redirected to the 'admin' page.
+     * @param integer $id the ID of the model to be deleted
+     */
+    public function actionDelete($id) {
+        $this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+        if(!isset($_GET['ajax']))
+            $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+    }
 
-	/**
-	 * Lists all models.
-	 */
-	public function actionIndex() {
-		$this->actionAdmin();
-	}
+    /**
+     * Lists all models.
+     */
+    public function actionIndex() {
+        $this->actionAdmin();
+    }
 
-	/**
-	 * Manages all models.
-	 */
-	public function actionAdmin() {
-		$model=new GlobalTrackerOrder('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['GlobalTrackerOrder']))
-			$model->attributes=$_GET['GlobalTrackerOrder'];
+    /**
+     * Manages all models.
+     */
+    public function actionAdmin() {
+        $model=new GlobalTrackerOrder('search');
+        $model->unsetAttributes();  // clear any default values
+        if(isset($_GET['GlobalTrackerOrder']))
+            $model->attributes=$_GET['GlobalTrackerOrder'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
-	}
+        $this->render('admin',array(
+            'model'=>$model,
+        ));
+    }
 
     public function insertHistoryO($id, $field, $old, $new, $time, $created_by) {
         $history = new DotTrackerOrderHistory();
@@ -575,6 +615,9 @@ class OrderFormController extends Controller {
         $history->save();
     }
 
+    /**
+     * Used for statuses 1-4
+     */
     public function actionChangeStatus() {
         // grabbing order id and status from post request
         $id=Yii::app()->request->getParam('id',0);
@@ -598,31 +641,6 @@ class OrderFormController extends Controller {
         $oldStatus = GlobalTrackerOrder::$arrStatus[$model->status];
         $newStatus = GlobalTrackerOrder::$arrStatus[$status];
         $this->insertHistoryO($model->id,'Status',$oldStatus,$newStatus,$curTime,$model->created_by);
-        /**
-         * Status is being changed to either 'not signed' or 'Dispatched'.
-         * Moving data from order table to dispatch table
-         */
-        if($status == 5 || $status == 6) {
-            Yii::app()->getModule('GlobalTrackerDispatch');
-            $dispatchModel = new GlobalTrackerDispatch;
-            $dispatchModel->attributes = $model->attributes;
-            $dispatchModel->status = $status;
-            $dispatchModel->id = $model->id;
-
-            if($dispatchModel->validate()) {
-                $dispatchModel->save();
-                $success=true;
-                $msg='Status updated successfully';
-            } else {
-                $success=false;
-                $msg='Status could not be updated';
-            }
-            echo CJSON::encode(array('success'=>$success,'msg'=>$msg));
-
-            // remove data from order table
-            $model->delete();
-            return;
-        }
 
         $model->status=$status;
 
@@ -651,7 +669,7 @@ class OrderFormController extends Controller {
         }
 
         $model = $this->loadModel($id);
-        
+
         date_default_timezone_set('America/Los_Angeles');
         $curTime = date("m/d/Y H:i:s a");
         $this->insertHistoryO($model->id, 'Assigned to', $model->created_by, $username, $curTime, Yii::app()->user->id);
@@ -676,30 +694,30 @@ class OrderFormController extends Controller {
         ));
     }
 
-	/**
-	 * Returns the data model based on the primary key given in the GET variable.
-	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer $id the ID of the model to be loaded
-	 * @return GlobalTrackerOrder the loaded model
-	 * @throws CHttpException
-	 */
-	public function loadModel($id) {
-		$model = GlobalTrackerOrder::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
-		return $model;
-	}
+    /**
+     * Returns the data model based on the primary key given in the GET variable.
+     * If the data model is not found, an HTTP exception will be raised.
+     * @param integer $id the ID of the model to be loaded
+     * @return GlobalTrackerOrder the loaded model
+     * @throws CHttpException
+     */
+    public function loadModel($id) {
+        $model = GlobalTrackerOrder::model()->findByPk($id);
+        if($model===null)
+            throw new CHttpException(404,'The requested page does not exist.');
+        return $model;
+    }
 
-	/**
-	 * Performs the AJAX validation.
-	 * @param GlobalTrackerOrder $model the model to be validated
-	 */
-	protected function performAjaxValidation($model) {
-		if(isset($_POST['ajax']) && $_POST['ajax']==='global-tracker-order-form') {
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
+    /**
+     * Performs the AJAX validation.
+     * @param GlobalTrackerOrder $model the model to be validated
+     */
+    protected function performAjaxValidation($model) {
+        if(isset($_POST['ajax']) && $_POST['ajax']==='global-tracker-order-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+    }
 
     /*public function sendSmsToUserFollowup($model1) {
         $msgTxt = "Order form followup submitted successfullly";
@@ -747,7 +765,7 @@ class OrderFormController extends Controller {
         $templArr = $Template->attributes;
         $body = $templArr['emaildata'];
         $bodytxt = '';
-        
+
         foreach ($arr as $index=>$val) {
             if($index == 'vehicle_info') {
                 $body = str_replace('[vehicle_info]', FilingGenerics::getVehicleInfoforMail($CreditCardAuth->id), $body);
@@ -806,7 +824,7 @@ class OrderFormController extends Controller {
         $model = new DotTrackerSms();
         $model->status = DotTrackerSms::$arrStatus['init'];
         $model->phone = $CreditCardAuth->mobile;
-        $model->message = $msgTxt; 
+        $model->message = $msgTxt;
 
         if($model->validate()) {
             $model->save();
@@ -817,10 +835,10 @@ class OrderFormController extends Controller {
             $twilio = new Client($sid, $token);
 
             $message = $twilio->messages->create($model->phone, // to
-                           array(
-                               "body" => $model->message,
-                               "from" => "+18183512878"
-                           ));
+                array(
+                    "body" => $model->message,
+                    "from" => "+18183512878"
+                ));
         } else {
             print_r($model->getErrors());
         }

@@ -2917,20 +2917,20 @@
         var idVal='<?php echo FilingGenerics::encryptKey($model->id); ?>';
         if(status === 'order') {
            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['order'])));?>';
-        } 
-        
+        }
+
         /**
             OrderFormController::actionChangeStatus()
             - michael harootoonyan
          */
         else if(status === 'not_signed') {
-            //window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=5'); ?>';
-            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['not_signed'])));?>';
+            window.location.href = '<?php echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=5'); ?>';
+            //var url = '<?php //echo Yii::app()->createUrl('orderForm/dispatch', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['not_signed'])));?>';
         } else if(status === 'dispatched') {
-            //window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=6'); ?>';
-            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['dispatched'])));?>';
-        } 
-        
+            window.location.href = '<?php echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=6'); ?>';
+            //var url = '<?php //echo Yii::app()->createUrl('orderForm/dispatch', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['dispatched'])));?>';
+        }
+
         else if(status === 'issues') {
             var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['issues'])));?>';
         } else if(status === 'hold') {
@@ -2965,11 +2965,7 @@
                 },2000);
             }
         });
-        /*if(status === 'dispatched') {
-            window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id); ?>';
-        } else if(status === 'not_signed') {
-            window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id); ?>';
-        }*/
+
     }
 
     /*function moveToOrder() {
