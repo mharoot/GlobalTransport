@@ -23,7 +23,7 @@
 <?php } ?>
 <?php if($model->status != GlobalTrackerOrder::$enumStatus['dispatched'])  { ?>
     <a id="dispatchedBtn" onclick="moveTo('dispatched');" class="btn btn-primary"
-   style="margin: 10px;float: right;">Dispatch Order</a>
+   style="margin: 10px;float: right;">Move to Dispatched</a>
 <?php } ?>
 <?php if($model->status != GlobalTrackerOrder::$enumStatus['issues'])  { ?>
     <a id="issuesBtn" onclick="moveTo('issues');" class="btn btn-info"
@@ -600,7 +600,7 @@
                         <div class="panel-heading">INTERNAL NOTES</div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <label for="nameon_card">Enter Internal Notes: </label>
+                                <label for="nameon_card">Enter internal notes: </label>
                                 <br />
                                 <div class="alert alert-success" id="successservicety33" style="display: none"></div>
                                 <div class="alert alert-danger" id="errorservicety33" style="display: none"></div>
@@ -621,9 +621,9 @@
                                 <div id="noteArea">
                                     <table id="noteTable " class="table table-striped" style="margin-top:30px;">
                                         <tr>
-                                            <td width="25%">Date</td>
-                                            <td width="50%">Notes</td>
-                                            <td width="25%">Added By</td>
+                                            <td width="20%">Date</td>
+                                            <td width="70%">Notes</td>
+                                            <td width="20%">Added By</td>
                                         </tr>
                                             <!-- <td>06/12/2018 08:40:18 AM</td>
                                             <td>Charge the card on 06/20/2018.</td>
@@ -2474,7 +2474,7 @@
                                                     'COD to Delivery Terminal'=>'COD to Delivery Terminal',
                                                     'COD to Pickup Terminal'=>'COD to Pickup Terminal',
                                                     'COP to Carrier (On Pickup)'=>'COP to Carrier (On Pickup)',
-                                                    'Shipper Invoice'=>'Shipper Invoice'), array('class'=>'form-control'));
+                                                    'Shipper Invoice'=>'Shipper Invoice'));
                                                 ?>
                                             </div>
                                         </div><br>
@@ -2484,7 +2484,7 @@
                                                 <?php echo $form->dropDownList($model,'cod_method',array(
                                                     ''=>'- select one -',
                                                     'Cash/Certified Funds'=>'Cash/Certified Funds',
-                                                    'Check'=>'Check'), array('class'=>'form-control'));
+                                                    'Check'=>'Check'));
                                                 ?>
                                             </div>
                                         </div><br>
@@ -2917,13 +2917,21 @@
         var idVal='<?php echo FilingGenerics::encryptKey($model->id); ?>';
         if(status === 'order') {
            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['order'])));?>';
-        } else if(status === 'not_signed') {
-            window.location.href = '<?php echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=5'); ?>';
-            //var url = '<?php //echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['not_signed'])));?>';
+        } 
+        
+        /**
+            OrderFormController::actionChangeStatus()
+            - michael harootoonyan
+         */
+        else if(status === 'not_signed') {
+            //window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=5'); ?>';
+            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['not_signed'])));?>';
         } else if(status === 'dispatched') {
-            window.location.href = '<?php echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=6'); ?>';
-            //var url = '<?php //echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['dispatched'])));?>';
-        } else if(status === 'issues') {
+            //window.location.href = '<?php //echo Yii::app()->createurl('orderForm/dispatch&id='.$model->id.'&status=6'); ?>';
+            var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['dispatched'])));?>';
+        } 
+        
+        else if(status === 'issues') {
             var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['issues'])));?>';
         } else if(status === 'hold') {
             var url = '<?php echo Yii::app()->createUrl('orderForm/changeStatus', array('id' => '__id__', 'status' => FilingGenerics::encryptKey(GlobalTrackerOrder::$enumStatus['hold'])));?>';

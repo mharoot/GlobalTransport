@@ -162,7 +162,7 @@ $('.search-form form').submit(function(){
                             'name'=>'carrier_pay',
                             'value'=>function($data) {
                                 $carrier = FilingGenerics::getCarrierInfo($data->carrier_name);
-                                echo '<label>Carrier:</label><a href="'.Yii::app()->createUrl('account/view&type=2',array('id'=>$carrier->id)).'">'.$carrier->company_name.'</a><br/><label>Phone:</label>' . FilingGenerics::showPhone($carrier->phone1) . '<br/>';
+                                // echo '<label>Carrier:</label><a href="'.Yii::app()->createUrl('account/view&type=2',array('id'=>$carrier->id)).'">'.$carrier->company_name.'</a><br/><label>Phone:</label>' . FilingGenerics::showPhone($carrier->phone1) . '<br/>';
                                 if($data->carrier_pay != '') {
                                     echo '<label>Carrier Pay:</label>$'.$data->carrier_pay;
                                 } else {
@@ -757,7 +757,7 @@ $('.search-form form').submit(function(){
                             'name'=>'carrier_pay',
                             'value'=>function($data) {
                                 $carrier = FilingGenerics::getCarrierInfo($data->carrier_name);
-                                echo '<label>Carrier:</label><a href="'.Yii::app()->createUrl('account/view&type=2',array('id'=>$carrier->id)).'">'.$carrier->company_name.'</a><br/><label>Phone:</label>' . FilingGenerics::showPhone($carrier->phone1) . '<br/>';
+                                // echo '<label>Carrier:</label><a href="'.Yii::app()->createUrl('account/view&type=2',array('id'=>$carrier->id)).'">'.$carrier->company_name.'</a><br/><label>Phone:</label>' . FilingGenerics::showPhone($carrier->phone1) . '<br/>';
                                 if($data->carrier_pay != '') {
                                     echo '<label>Carrier Pay:</label>$'.$data->carrier_pay;
                                 } else {

@@ -60,10 +60,10 @@ $('.search-form form').submit(function(){
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Orders
                 (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['order'], $pageSize)->getTotalItemCount(); ?>)</a></li>
-            <!-- <li><a data-toggle="tab" href="#menu5">Not Signed
-                (<?php //echo $model->search(GlobalTrackerOrder::$enumStatus['not_signed'], $pageSize)->getTotalItemCount(); ?>)</a></li>
+            <li><a data-toggle="tab" href="#menu5">Not Signed
+                (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['not_signed'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu6">Dispatched
-                (<?php //echo $model->search(GlobalTrackerOrder::$enumStatus['dispatched'], $pageSize)->getTotalItemCount(); ?>)</a></li> -->
+                (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['dispatched'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu7">Issues
                 (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['issues'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu2">Hold
@@ -438,7 +438,7 @@ $('.search-form form').submit(function(){
                             onclick="unSelectAllA();">None</span> </span>
             </div>
 
-            <!-- <div id="menu5" class="tab-pane fade">
+            <div id="menu5" class="tab-pane fade">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
                     'id'=>'global-tracker-order-grid-not_signed',
                     'dataProvider'=>$model->search(GlobalTrackerOrder::$enumStatus['not_signed'], $pageSize),
@@ -669,7 +669,7 @@ $('.search-form form').submit(function(){
 
                 <span>Select : <input type="checkbox" id="allA" style="margin-right:10px;" onclick="checkAllA();"><span onclick="selectAllA();">All</span> / <span
                             onclick="unSelectAllA();">None</span> </span>
-            </div> -->
+            </div>
 
             <div id="menu7" class="tab-pane fade">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(

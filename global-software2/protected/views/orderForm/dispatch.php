@@ -206,7 +206,7 @@ $this->breadcrumbs=array(
                                     'QC'=>'Canada-Quebec',
                                     'SK'=>'Canada-Saskatchewan',
                                     'YT'=>'Canada-Yukon',
-                                    'OC'=>'OTHER COUNTRIES'), array('class'=>'form-control')); 
+                                    'OC'=>'OTHER COUNTRIES')); 
                                 ?>
                             </div>
                         </div>
@@ -342,7 +342,7 @@ $this->breadcrumbs=array(
                                     'QC'=>'Canada-Quebec',
                                     'SK'=>'Canada-Saskatchewan',
                                     'YT'=>'Canada-Yukon',
-                                    'OC'=>'OTHER COUNTRIES'), array('class'=>'form-control')); 
+                                    'OC'=>'OTHER COUNTRIES')); 
                                 ?>
                             </div>
                         </div>
@@ -381,43 +381,20 @@ $this->breadcrumbs=array(
 
                             <div class="form-group">
                                 <label for="nameon_card">Load Date <span style="color: red">*</span></label>
-                                <div style="display:inline-block;">
-                                    <div class="col-sm-6">
-                                        <?php echo $form->dropDownList($model,'load_date_type',array(
-                                                    'Estimated'=>'Estimated',
-                                                    'Exactly'=>'Exactly',
-                                                    'No Early Than'=>'No Early Than',
-                                                    'No Later Than'=>'No Later Than'), array('class'=>'form-control')); 
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <?php echo $form->dateField($model, 'extra', array('class'=>'form-control')); ?>
-                                    </div>
-                                </div>
+                                <?php echo $form->dateField($model,'extra',array('class'=>'form-control')); ?>
+
                             </div>
 
                             <div class="form-group">
                                 <label for="nameon_card">Delivery Date <span style="color: red">*</span></label>
-                                <div style="display:inline-block;">
-                                    <div class="col-sm-6">
-                                        <?php echo $form->dropDownList($model,'delivery_date_type',array(
-                                                    'Estimated'=>'Estimated',
-                                                    'Exactly'=>'Exactly',
-                                                    'No Early Than'=>'No Early Than',
-                                                    'No Later Than'=>'No Later Than'), array('class'=>'form-control')); 
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <?php echo $form->dateField($model,'extra1',array('class'=>'form-control')); ?>
-                                    </div>
-                                </div>
+                                <?php echo $form->dateField($model,'extra1',array('class'=>'form-control')); ?>
                             </div>
 
                             <div class="form-group">
                             	<label for="nameon_card">Select a carrier: <span style="color: red">*</span></label>
                                 <?php 
                                     $list = FilingGenerics::getCarrierList();
-                                    echo $form->dropDownList($model,'carrier_name', $list, array('length'=>'10px', 'class'=>'form-control'));
+                                    echo $form->dropDownList($model,'carrier_name', $list, array('length'=>'10px'));
                                 ?>
                             	<!-- <select name="shipper" class="form-control">
                                     <option value="">Select</option>
@@ -429,7 +406,7 @@ $this->breadcrumbs=array(
                         <div class="col-sm-2 col-xs-hidden">&nbsp;</div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="nameon_card">Notes from Shipper</label>
+                                <label for="nameon_card">Notes from Shippe</label>
                                 <?php echo $form->textArea($model,'notes_shipper',array('class'=>'form-control')); ?>
                                 <p style="font-size: 10px;"><i>(Will appear on Shipper Invoice & Shipping Order Form)</i></p>
                             </div>
@@ -639,7 +616,7 @@ $this->breadcrumbs=array(
 	<div class="col-sm-12">
         <div class="form-group" style="float: right;">
             <div class="row buttons" style="margin-top:20px;">
-                <?php echo CHtml::submitButton($model->isNewRecord ? 'Dispatch Order' : 'Dispatch Order',array('id'=>'subBtn', 'name' => 'but1','class'=>'btn btn-primary')); ?>
+                <?php echo CHtml::submitButton($model->isNewRecord ? 'Save' : 'Save',array('id'=>'subBtn', 'name' => 'but1','class'=>'btn btn-success')); ?>
             </div>
         </div>
     </div>

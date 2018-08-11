@@ -526,7 +526,7 @@
                         }
 
                     });
-                    window.location.replace("http://globaltransportationsoftware.com/index.php?r=orderForm/thanks");
+
                 }
             });
         }

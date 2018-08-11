@@ -174,7 +174,7 @@
             </div>
             <div class="col-sm-6">
 
-                    <img class="img img-responsive" src="<?php echo $model->signature;?>" style="float: right;"> </div>
+                    <img class="img img-responsive" src="<?php echo $model->extra4;?>" style="float: right;"> </div>
 
         </div>
         <div class="col-sm-12 boxTitle">7. Terms and Conditions</div>

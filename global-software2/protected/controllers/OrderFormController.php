@@ -576,60 +576,52 @@ class OrderFormController extends Controller {
     }
 
     public function actionChangeStatus() {
+        // grabbing order id and status from post request
         $id=Yii::app()->request->getParam('id',0);
         $status=Yii::app()->request->getParam('status',0);
         $success=false;
         $msg='';
-        if(empty($id) || empty($status))
-        {
-            die;
-        }
-        if(!empty($id))
-        {
-            $id=FilingGenerics::decryptKey($id);
-        }
-        //print_r($_REQUEST);die;
-        if(!empty($status))
-        {
-            $status=FilingGenerics::decryptKey($status);
-        }
+
+        // if either the order id or status in the post request is empty stop here
+        if ( empty($id) || empty($status) ) die;
+
+        // convert encrypted values to data values
+        $id = FilingGenerics::decryptKey($id);
+        $status = FilingGenerics::decryptKey($status);
 
         //Get the current status
         $model=$this->loadModel($id);
         date_default_timezone_set('America/Los_Angeles');
         $curTime = date("m/d/Y H:i:s a");
 
+        // insert order history
         $oldStatus = GlobalTrackerOrder::$arrStatus[$model->status];
         $newStatus = GlobalTrackerOrder::$arrStatus[$status];
         $this->insertHistoryO($model->id,'Status',$oldStatus,$newStatus,$curTime,$model->created_by);
-
-        /*
-         * If the current status is 'not signed' or 'Dispatched' and it will be changed back to order,
-         * then delete all the columns relavent to dispatch.
+        /**
+         * Status is being changed to either 'not signed' or 'Dispatched'.
+         * Moving data from order table to dispatch table
          */
-        if(($model->status == 5 || $model->status == 6) && $status == 1) {
-            $this->insertHistoryO($model->id,'Load Date',$model->extra,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Delivery Date',$model->extra1,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'carrier Name',$model->carrier_name,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Carrier Pmt Term',$model->extra2,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Carrier Pmt Term Begin',$model->extra3,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Carrier Pmt Method',$model->extra4,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Dispatch Contact',$model->dispatch_contact,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Dispatch Email',$model->dispatch_email,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Dispatch Phone',$model->dispatch_phone,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Dispatch Fax',$model->dispatch_fax,'none',$curTime,$model->created_by);
-            $this->insertHistoryO($model->id,'Dispatched Time',$model->dispatched_time,'none',$curTime,$model->created_by);
-            $model->extra = '';
-            $model->extra1 = '';
-            $model->carrier_name = '';
-            $model->extra2 = '';
-            $model->extra3 = '';
-            $model->extra4 = '';
-            $model->dispatch_contact = '';
-            $model->dispatch_email = '';
-            $model->dispatch_phone = '';
-            $model->dispatch_fax = '';
-            $model->dispatched_time = '';
+        if($status == 5 || $status == 6) {
+            Yii::app()->getModule('GlobalTrackerDispatch');
+            $dispatchModel = new GlobalTrackerDispatch;
+            $dispatchModel->attributes = $model->attributes;
+            $dispatchModel->status = $status;
+            $dispatchModel->id = $model->id;
+
+            if($dispatchModel->validate()) {
+                $dispatchModel->save();
+                $success=true;
+                $msg='Status updated successfully';
+            } else {
+                $success=false;
+                $msg='Status could not be updated';
+            }
+            echo CJSON::encode(array('success'=>$success,'msg'=>$msg));
+
+            // remove data from order table
+            $model->delete();
+            return;
         }
 
         $model->status=$status;

@@ -358,7 +358,6 @@ class FilingGenerics
     public static function getVehicle($id)
     {
         $res = $id > 60;
-        file_put_contents("test.txt",$res);
         $Vehicle = GlobalTrackerDispatch::model()->findByPk("61");
         if ( isset ($Vehicle->vehicle_info) ) {
             return $Vehicle;
