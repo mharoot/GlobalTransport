@@ -30300,3 +30300,63 @@ in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
 2018/08/11 15:49:04 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
 in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
 in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (119)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:16 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerDispatch".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\OrderFormController.php (201)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "id" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "bal_paid_by" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "cod_method" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "driver_fname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "driver_lname" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "driver_phone" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "driver_instruction" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
+2018/08/12 01:17:43 [warning] [application] Failed to set unsafe attribute "status" of "GlobalTrackerOrder".
+in C:\xampp\htdocs\GlobalTransport\global-software2\protected\controllers\DispatchController.php (623)
+in C:\xampp\htdocs\GlobalTransport\global-software2\index.php (13)
