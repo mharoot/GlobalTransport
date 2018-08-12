@@ -62,10 +62,12 @@ $('.search-form form').submit(function(){
                 (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['order'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu5">Not Signed
                 (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['not_signed'], $pageSize)->getTotalItemCount(); ?>)</a></li>
-            <li><a data-toggle="tab" href="#menu6">Dispatched
-                (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['dispatched'], $pageSize)->getTotalItemCount(); ?>)</a></li>
+
+            <!-- <li><a data-toggle="tab" href="#menu6">Dispatched
+                (<?php //echo $model->search(GlobalTrackerOrder::$enumStatus['dispatched'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu7">Issues
-                (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['issues'], $pageSize)->getTotalItemCount(); ?>)</a></li>
+                (<?php //echo $model->search(GlobalTrackerOrder::$enumStatus['issues'], $pageSize)->getTotalItemCount(); ?>)</a></li> -->
+
             <li><a data-toggle="tab" href="#menu2">Hold
                 (<?php echo $model->search(GlobalTrackerOrder::$enumStatus['hold'], $pageSize)->getTotalItemCount(); ?>)</a></li>
             <li><a data-toggle="tab" href="#menu3">Archived
